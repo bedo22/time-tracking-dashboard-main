@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="./style.css" />
+
+  <title>Frontend Mentor | Time tracking dashboard</title>
+</head>
+<body>
+  <main class="dashboard">
+    <h1 class="visually-hidden">Time tracking dashboard</h1>
+
+    <section class="dashboard__profile profile-card" aria-labelledby="profile-name">
+      <header class="profile-card__summary">
+        <img
+          class="profile-card__avatar"
+          src="./images/image-jeremy.png"
+          alt="Jeremy Robson"
+          width="78"
+          height="78"
+        />
+        <div class="profile-card__text">
+          <p class="profile-card__label">Report for</p>
+          <h2 class="profile-card__name" id="profile-name">Jeremy Robson</h2>
+        </div>
+      </header>
+
+      <nav class="profile-card__nav" aria-label="Select timeframe">
+        <ul class="timeframe-list">
+          <li class="timeframe-list__item">
+            <button
+              class="timeframe-button"
+              type="button"
+              data-timeframe="daily"
+              aria-pressed="false"
+            >
+              Daily
+            </button>
+          </li>
+          <li class="timeframe-list__item">
+            <button
+              class="timeframe-button is-active"
+              type="button"
+              data-timeframe="weekly"
+              aria-pressed="true"
+            >
+              Weekly
+            </button>
+          </li>
+          <li class="timeframe-list__item">
+            <button
+              class="timeframe-button"
+              type="button"
+              data-timeframe="monthly"
+              aria-pressed="false"
+            >
+              Monthly
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </section>
+
+    <section class="dashboard__activities" aria-labelledby="activities-heading">
+      <h2 id="activities-heading" class="visually-hidden">Activity cards</h2>
+      <div id="activity-cards" class="dashboard__cards">
+        <!-- JS will inject activity cards here -->
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="noopener noreferrer">
+        Frontend Mentor</a>.
+      Coded by <a href="https://www.frontendmentor.io/profile/bedo22" target="_blank" rel="noopener noreferrer">
+        Abdelrahman khaled</a>.
+    </p>
+  </footer>
+
+  <script src="./script.js" defer></script>
+</body>
+</html>
