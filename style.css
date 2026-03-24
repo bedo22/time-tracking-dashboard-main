@@ -340,7 +340,7 @@ button {
   .dashboard {
     grid-template-columns: 255px 1fr;
     align-items: start;
-    padding-block: clamp(5rem, 20vh, 13rem) 3rem;
+    padding-block: clamp(5rem, 21vh, 13rem) 3rem;
   }
 
   .profile-card__summary {
